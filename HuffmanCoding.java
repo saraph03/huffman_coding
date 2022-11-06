@@ -178,27 +178,7 @@ public class HuffmanCoding {
     }
 
 
-        /*if (sorted list is empty && target has one root node){
-            dont do anything;
-        } 
-        if (sorted list has more than one node && target is null){
-            dequeue 2 node in sorted list; 
-            create a new TreeNode;
-            add the dequeued oc values together and put that in the new node with null char;
-            if (dequeued node1 > deq node2){
-            put node1 on the left;
-            other on the right;
-            } 
-            add TreeNode to target;
-        }
-        if (sorted list has only 1 node){
-            deq the last node in sL 
-            deq the node in target 
-            create a new Treenode with added OC and null char;
-            attach the deq nodes to the Tree;
-            add all of that back in the target
-            
-        }*/
+       
 
     /**
      * Uses huffmanRoot to create a string array of size 128, where each
@@ -218,8 +198,7 @@ public class HuffmanCoding {
                 String code = "";
                 generateCodes(rootNode, code, encodings, '.');
         
-                //for (int i=0; i<encodings.length; i++)
-                //    System.out.println(encodings[i]);
+                
         
             }
         
@@ -252,31 +231,7 @@ public class HuffmanCoding {
             }
 
        
-        /*if (!sortedCharFreqList.isEmpty()){
-            for (int i = 0; i < sortedCharFreqList.size(); i++){
-                if (TreeNode.getData().getCharacter != null){
-                    if (TreeNode.getLeft)
-                    Character data = hf.getData().getCharacter();
-
-                }
-            }
-
-        }*/
-        //if()
-
-
-   /* private void Leftnode(){
-        int array[];
-        for (int i = 0; i < sortedCharFreqList.size; i++){
-            if(TreeNode.getLeft == true){
-                array[i] = 0;
-        } else {
-            if (TreeNode.getRight == true){
-                array[i] = 1;
-            }
-        }
-        }*/
-
+       
 
 
 	/* Your code goes here */
@@ -305,7 +260,7 @@ public class HuffmanCoding {
         }
 
 
-        System.out.println(bitString);
+        
 
         writeBitString(encodedFile,bitString );
 
